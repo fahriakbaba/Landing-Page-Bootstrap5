@@ -1,0 +1,13 @@
+.navbar-nav-hover {
+    transition: all .7s !important;
+}
+
+.navbar-nav-hover:hover {
+    color: darkred !important;
+}
+
+.form-group {
+    margin-top: 72px !important;
+}
+
+ 

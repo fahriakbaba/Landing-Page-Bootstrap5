@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--Navbar - start-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 w-100 p-3"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Devoloper Bootcamp</a>
+        <button
+          class="navbar-toggler navbar-dark bg-dark ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link navbar-nav-hover" aria-current="page" href="#"
+              >What You'll Learn</a
+            >
+            <a class="nav-link navbar-nav-hover" href="#">Questions</a>
+            <a class="nav-link navbar-nav-hover" href="#">Instructors</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar -end-->
+
+    <!--About start-->
+    <div class="col-6 mx-auto my-5 p-4">
+      <div class="row g-5 border-1 shadow-sm rounded-2">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h4 class="text-danger">Frontend Devoloper</h4>
+          <p class="lead fs-6" style="text-align: justify;">
+            A front-end developer creates websites and applications using web
+            languages such as HTML, CSS, and JavaScript that allow users to
+            access and interact with the site or app. When you visit a website,
+            the design elements you see were created by a front-end developer.
+          </p>
+          <h4 class="text-danger">Backend Devoloper</h4>
+          <p class="lead fs-6" style="text-align: justify;">
+            Back-end developers are the experts who build and maintain the
+            mechanisms that process data and perform actions on websites. Unlike
+            front-end developers, who control everything you can see on a
+            website, back-end developers are involved in data storage, security,
+            and other server-side functions that you cannot see.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="w-100 rounded shadow-lg img-fluid"
+            src="./assets/images/devoloper.png"
+            alt="devolper"
+          />
+        </div>
+      </div>
+    </div>
+    <!--About end-->
+
+    <!--Footer start-->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-github"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!--Footer end-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
