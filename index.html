@@ -51,26 +51,38 @@
     <!--Navbar -end-->
 
     <!--About start-->
-    <div class="col-6 mx-auto my-5 p-4">
-      <div class="row g-5 border-1 shadow-sm rounded-2">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h4 class="text-danger">Frontend Devoloper</h4>
-          <p class="lead fs-6" style="text-align: justify;">
+    <div class="col-9 mx-auto my-5 p-4">
+      <div class="row g-5 border-1 shadow-sm rounded-2 p-4">
+        <div class="col-xxl-6 d-flex flex-column justify-content-center">
+          <h3 class="mb-3">
+            Become a
+            <span class="text-danger text-capitalize">web devoloper</span>
+          </h3>
+          <h4 class="text-dark fs-5">Frontend Devoloper</h4>
+          <p class="lead fs-6" style="text-align: justify">
             A front-end developer creates websites and applications using web
             languages such as HTML, CSS, and JavaScript that allow users to
             access and interact with the site or app. When you visit a website,
             the design elements you see were created by a front-end developer.
           </p>
-          <h4 class="text-danger">Backend Devoloper</h4>
-          <p class="lead fs-6" style="text-align: justify;">
+          <h4 class="text-dark fs-5">Backend Devoloper</h4>
+          <p class="lead fs-6" style="text-align: justify">
             Back-end developers are the experts who build and maintain the
             mechanisms that process data and perform actions on websites. Unlike
             front-end developers, who control everything you can see on a
             website, back-end developers are involved in data storage, security,
             and other server-side functions that you cannot see.
           </p>
+          <button
+            style="width: 200px"
+            class="btn btn-primary text-capitalize mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            start the enrollment
+          </button>
         </div>
-        <div class="col-lg-6">
+        <div class="col-xxl-6 d-flex align-items-center">
           <img
             class="w-100 rounded shadow-lg img-fluid"
             src="./assets/images/devoloper.png"
@@ -80,6 +92,64 @@
       </div>
     </div>
     <!--About end-->
+    <!--Sign Up start-->
+    <div
+      class="row p-5 bg-primary d-flex flex-sm-column flex-lg-row justify-content-center align-items-center"
+    >
+      <h3 class="col-sm-12 col-md-4 text-white fs-3 text-center">
+        Sign Up For Our Newsletter
+      </h3>
+      <form
+        class="col-sm-12 col-md-4 d-md-flex justify-content-center align-items-center"
+      >
+        <input
+          type="text"
+          placeholder="Enter email"
+          class="form-control rounded-1"
+        />
+        <button class="btn btn-dark rounded-1">Subscribe</button>
+      </form>
+    </div>
+    <!--Sign Up end-->
+    <!--Boxes start-->
+    <div class="row">
+      <div class="mx-auto col-9 p-5 d-flex flex-sm-column flex-lg-row justify-content-lg-center align-items-lg-center gap-5">
+        <div class="col-lg-4 text-center bg-dark text-white p-4 rounded-2">
+          <i class="bi bi-laptop fs-3"></i>
+          <h3>Virtual</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            voluptatibus quas, ad tenetur repudiandae perspiciatis assumenda
+            molestiae ab maxime id, dolores vitae labore eos laborum et, dolore
+            harum eveniet officiis!
+          </p>
+          <button class="btn btn-primary">Read More</button>
+        </div>
+        <div class="col-lg-4 text-center bg-secondary text-white p-4 rounded-2">
+          <i class="bi bi-person-bounding-box fs-3"></i>
+          <h3>Hydrib</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            voluptatibus quas, ad tenetur repudiandae perspiciatis assumenda
+            molestiae ab maxime id, dolores vitae labore eos laborum et, dolore
+            harum eveniet officiis!
+          </p>
+          <button class="btn btn-dark">Read More</button>
+        </div>
+        <div class="col-lg-4 text-center bg-dark text-white p-4 rounded-2">
+          <i class="bi bi-people-fill fs-3"></i>
+          <h3>In Person</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            voluptatibus quas, ad tenetur repudiandae perspiciatis assumenda
+            molestiae ab maxime id, dolores vitae labore eos laborum et, dolore
+            harum eveniet officiis!
+          </p>
+          <button class="btn btn-primary">Read More</button>
+        </div>
+      </div>
+    </div>
+    <!--Boxes end-->
 
     <!--Footer start-->
     <div class="container">
@@ -112,6 +182,56 @@
       </footer>
     </div>
     <!--Footer end-->
+
+    <!--Modal start-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Recipient:</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal end-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
